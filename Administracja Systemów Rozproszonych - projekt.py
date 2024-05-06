@@ -12,7 +12,7 @@ graf = None  # Zmienna przechowująca wygenerowany graf
 def generuj_graf_skierowany(l_wierzcholkow, l_krawedzi):
     # Funkcja generująca losowy graf skierowany z wagami na krawędziach
     if l_krawedzi < l_wierzcholkow:
-        raise ValueError("Liczba krawędzi musi być większa lub równa liczbie wierzchołków.")
+        raise ValueError("Liczba krawędzi musi być większa liczbie wierzchołków.")
 
     G = nx.DiGraph()  # Tworzenie nowego pustego grafu skierowanego
     nodes = range(1, l_wierzcholkow + 1)  # Tworzenie listy wierzchołków
